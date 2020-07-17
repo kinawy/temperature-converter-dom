@@ -1,14 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script defer src = 'app.js'></script>
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
+  <h1>Temperature Converter</h1>
+  
+  <div class="container">
+    <form id = 'tempForm'>
+      <input type="text" id = "inputTemp">
+      <label for = "farB">F°</label>
+      <input type= "radio" name = "temp" id = "farRadio">
+      <label for = "celB">C°</label>
+      <input type="radio" name="temp" id = "celRadio">
+      <button id = "submit" type = "submit">Submit</button>
+      <button id = "clear" type = "reset">Clear</button>
+    </form>
+    <div id = "convertedTemp"></div>
+  </div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
